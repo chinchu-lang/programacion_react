@@ -1,0 +1,22 @@
+import Tarjeta from "./Tarjeta";
+
+
+export default function Listado({personas}) {
+
+    return(
+        <div>
+            <h1>Componente Listado</h1>
+            <div className="Listado">
+            {personas.map((persona, index) =>
+
+            <Tarjeta
+                documento={persona.documento}
+                apellidos={persona.apellidos}
+                nombres={persona.nombres}
+            />
+
+            )}
+            </div>
+        </div>
+    )
+}
