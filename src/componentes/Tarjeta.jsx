@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-export default function Tarjeta({documento, nombres, apellidos, alumno}) {
+export default function Tarjeta({documento, nombres, apellidos, alumno,año,divicion}) {
 
     return(
         <div className="Tarjeta"
@@ -7,18 +6,9 @@ export default function Tarjeta({documento, nombres, apellidos, alumno}) {
                     color: alumno ? "black" : "white "
             }}
         >
-=======
-export default function Tarjeta({documento, nombres, apellidos}) {
-
-    return(
-        <div className="Tarjeta">
->>>>>>> 103644cce3c896724bc8f349f9ffa6acec75e623
             <h2>{documento}</h2>
             <h3>{apellidos}, {nombres}</h3>
+            <h4>{año}, {divicion}</h4>
         </div>
     )
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 103644cce3c896724bc8f349f9ffa6acec75e623

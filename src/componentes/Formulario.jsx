@@ -1,18 +1,28 @@
-<<<<<<< HEAD
-import {useState} from "react";
+import { useState } from "react";
 
-export default function Formulario() {
+export default function Formulario({ persona }) {
     const [documento, setDocumento] = useState("");
     const [apellidos, setApellidos] = useState("");
     const [nombres, setNombres] = useState("");
-    const [rol, setRol] = useState("");
+    const [rol, setRol] = useState("-1");
+    const [año, setAño] = useState("");
+    const [divicion, setDivicion] = useState("");
 
     const hanlderSubmit = (e) => {
         e.preventDefault();
-        console.log({documento, apellidos, nombres, rol});
+        const alumno = rol == "alumno"
+
+        const persona = {
+            documento,
+            nombres,
+            apellidos,
+            alumno,
+            año,
+            divicion
+        }
     }
-    
-    return(
+
+    return (
         <div className="Formulario">
             <h1>Componente Formulario</h1>
             <form onSubmit={hanlderSubmit}>
@@ -35,10 +45,23 @@ export default function Formulario() {
                     onChange={(e) => setNombres(e.target.value)}
                     value={nombres}
                 />
+                <input
+                    type="text"
+                    placeholder="Año"
+                    onChange={(e) => setAño(e.target.value)}
+                    value={Año}
+                />
+                <input
+                    type="text"
+                    placeholder="Divicion"
+                    onChange={(e) => setDivicion(e.target.value)}
+                    value={Divicion}
+                />
                 <select
                     onChange={(e) => setRol(e.target.value)}
                     value={rol}
                 >
+                    <option value="-1" disabled>Seleccionar rol</option>
                     <option value="alumno">Alumno</option>
                     <option value="docente">Docente</option>
                 </select>
@@ -47,6 +70,3 @@ export default function Formulario() {
         </div>
     )
 }
-=======
-
->>>>>>> 103644cce3c896724bc8f349f9ffa6acec75e623
