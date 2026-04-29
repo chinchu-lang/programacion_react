@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {useState} from "react";
 
 export default function Formulario() {
@@ -46,3 +47,6 @@ export default function Formulario() {
         </div>
     )
 }
+=======
+
+>>>>>>> 103644cce3c896724bc8f349f9ffa6acec75e623

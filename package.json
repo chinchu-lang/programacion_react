@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "primer_trabajo",
   "private": true,
   "version": "0.0.0",
@@ -23,5 +24,9 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
     "vite": "^8.0.9"
+=======
+  "dependencies": {
+    "node": "^24.15.0"
+>>>>>>> 103644cce3c896724bc8f349f9ffa6acec75e623
   }
 }

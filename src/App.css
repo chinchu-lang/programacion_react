@@ -4,6 +4,7 @@
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 .Contenedor {
     display: flex;
     flex-direction: row;
@@ -29,6 +30,8 @@
     margin: 10px 5px;
 }
 
+=======
+>>>>>>> 103644cce3c896724bc8f349f9ffa6acec75e623
 .Listado {
     flex: 1;
     display: flex;
@@ -50,4 +53,8 @@
 
 .Tarjeta h1, h2 {
     margin: 3px 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 103644cce3c896724bc8f349f9ffa6acec75e623
